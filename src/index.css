@@ -1,0 +1,90 @@
+/* Base shell shared with ryhub.dev - theme tokens, reset, and the two fixed
+   chrome controls (back link, theme toggle). Everything else lives in clash.css. */
+
+:root[data-theme='dark'] {
+  --bg: #15140f;
+  --text: #eae7dd;
+  --muted: #8d8a7e;
+  --border: #2b2a23;
+  --chip-bg: #201f19;
+  --chip-border: #35342c;
+}
+
+:root[data-theme='light'] {
+  --bg: #f3efe6;
+  --text: #1c1b16;
+  --muted: #6b695e;
+  --border: #dcd6c8;
+  --chip-bg: #e9e3d5;
+  --chip-border: #cfc9ba;
+}
+
+:root {
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-mono);
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.page {
+  min-height: 100svh;
+}
+
+/* ── Back to home ── */
+
+.back-home {
+  position: fixed;
+  top: 20px;
+  left: 22px;
+  z-index: 100;
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0.75;
+  transition: color 0.15s, opacity 0.15s;
+}
+
+.back-home:hover {
+  color: var(--text);
+  opacity: 1;
+}
+
+/* ── Theme toggle ── */
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 22px;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  opacity: 1;
+}
