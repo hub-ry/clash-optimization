@@ -43,7 +43,8 @@ package (`npm run gamedata`) after each balance patch, and `npm test` replays
 fixture villages to catch plans that silently change.
 
 ```sh
-npm install && npm run dev
+npm install && npm run dev   # local dev server
+npm run check                # lint + tests + production build
 ```
 
 Not affiliated with Supercell.

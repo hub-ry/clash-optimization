@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "node scripts/plan-smoke.mjs",
+    "check": "npm run lint && npm test && npm run build",
     "gamedata": "node scripts/build-gamedata.mjs"
   },
   "dependencies": {
