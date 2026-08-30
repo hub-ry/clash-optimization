@@ -1,6 +1,6 @@
 # clash-optimization
 
-**[clash.ryhub.dev](https://clash.ryhub.dev)**
+**[ryhub.dev/clash](https://ryhub.dev/clash)**
 
 Paste your Clash of Clans data export. Get back the exact upgrade order that
 finishes the game fastest.
