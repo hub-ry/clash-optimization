@@ -6,4 +6,4 @@
 - this tool parses the json and returns the actions you should take to progress through the game most optimally
 
 
-- used my my entire clan 
+- used by my entire clan 
