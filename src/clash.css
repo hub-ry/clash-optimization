@@ -690,3 +690,33 @@
 .s-link:hover {
   color: var(--text);
 }
+
+@media (max-width: 640px) {
+  .s-wrap {
+    padding: 64px 16px 48px;
+  }
+
+  /* Below 16px iOS Safari zooms the page when the textarea is focused. */
+  .s-input {
+    font-size: 16px;
+  }
+
+  .s-headline {
+    font-size: 19px;
+  }
+
+  .s-foot {
+    gap: 8px;
+    margin-top: 32px;
+  }
+
+  /* Thumb-sized hit area without changing how the links look. */
+  .s-foot .s-link {
+    padding: 10px 12px;
+    margin: -10px -12px;
+  }
+
+  .s-foot .s-link + .s-link {
+    margin-left: 12px;
+  }
+}
